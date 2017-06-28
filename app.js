@@ -7,6 +7,7 @@ var router = require('./router')
 var io = require('socket.io')(http);
 
 app.use(cors());
+
 app.use('/', router);
 app.use('/', express.static(path.join(__dirname, 'static')));
 
